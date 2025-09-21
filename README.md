@@ -1,50 +1,40 @@
-🏎️ F1 Top 5 Decision Trees
-📌 Project Overview
+# 🏎️ F1 Top 5 Predictor – Decision Tree Classifier
 
-This mini-project uses Decision Tree Classifiers from scikit-learn to predict whether a Formula 1 driver will finish in the Top 5 based on given race data. The goal is to explore machine learning classification, understand decision boundaries, and visualize how decision trees make predictions.
+This project uses **machine learning** to predict whether an F1 driver will finish in the **Top 5** of a race, based on race and driver statistics.  
+It uses **scikit-learn's DecisionTreeClassifier** to train a model and then predict on new race data, with probability scores and a color-coded table for visualization.
 
-🚀 Features
+---
 
-🏁 Driver Performance Prediction – Classifies if a driver finishes in Top 5.
+## 📌 Features
+- ✅ **Loads historical race data** to train the model  
+- ✅ **Predicts Top 5 finishes** for upcoming races  
+- ✅ **Displays probabilities** of finishing in the Top 5  
+- ✅ **Color-coded results** for easy interpretation (Green = Top 5, Red = Not Top 5)  
+- ✅ Clean, beginner-friendly implementation with `scikit-learn`
 
-🌳 Decision Tree Visualization – Clearly see how splits are made on features.
+---
 
-📊 Accuracy & Metrics – Evaluate model performance with precision, recall, and accuracy.
+## 🛠️ Tech Stack
+- **Python 3**
+- **pandas** – data loading & manipulation
+- **scikit-learn** – Decision Tree model
+- **Jupyter Notebook** – interactive development & visualization
 
-🔧 Customizable Data – Can be easily extended with more features like weather, team, circuit type, etc.
+---
 
-🧠 Tech Stack
+## 📂 Project Structure
+📁 F1-DecisionTree
+┣ 📜 f1_top5_predictor.ipynb # Main Jupyter Notebook
+┣ 📜 README.md # Project documentation (this file)
+┣ 📜 sklearndecisiontrees.ipynb 
 
-Language: Python
+---
 
-Libraries:
+## 🚀 How to Run
 
-pandas – Data handling
-
-numpy – Numerical operations
-
-scikit-learn – Model training and visualization
-
-matplotlib – Plotting decision trees and results
-
-📂 Project Structure
-F1_Top5_DecisionTrees/
-│
-├── F1_Top5_DecisionTree.ipynb   # Main notebook with code & outputs
-└── README.md                    # This file
-
-📸 Sample Output
-
-(Optional: You can add a screenshot of the decision tree or confusion matrix here.)
-
-🔮 Future Scope
-
-Add Random Forest and compare results.
-
-Use real-world F1 datasets (from Ergast API or Kaggle).
-
-Deploy as a simple web app (Streamlit or Flask).
-
-🏆 Why This Project?
-
-Because F1 + Data Science = Fast, Fun & Fantastic Learning! 🏎️💨
+1. **Clone this repository:**
+```bash
+git clone https://github.com/your-username/F1-DecisionTree.git
+cd F1-DecisionTree
+pip install pandas scikit-learn
+Jupyter Notebook f1_top5_predictor.ipynb
